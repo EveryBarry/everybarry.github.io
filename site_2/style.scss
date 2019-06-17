@@ -19,9 +19,16 @@ body {
         "footer footer footer footer footer footer";
 }
 
-.grid > * {
+.grid>* {
     /*            outline: 1px solid rgba(0, 0, 0, 0.55);*/
-    background: lightgray;
+    //background: lightgray;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
@@ -33,6 +40,7 @@ header {
     grid-area: header;
     display: grid;
     grid-gap: 10px;
+    height: 250px;
 }
 
 nav {
@@ -60,7 +68,7 @@ footer {
     grid-area: footer;
     width: 100%;
     text-align: center;
-    color: #445161;
+    color: #9db0c7;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -83,18 +91,28 @@ footer {
     grid-area: contAside;
 }
 
+@media (min-width: 1183px) {
+    header {
+        margin-bottom: -15px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1182px) {
+    header {
+        margin-bottom: -4px;
+    }
+}
+
 @media (max-width: 1024px) {
 
-    input{
-        margin-bottom: 15px;
-    }
-    nav{
+    nav {
         padding: 10px 2px 10px;
-        
+
         li {
             height: 100%;
         }
     }
+
     .grid {
         height: 100%;
         grid-template-areas:
@@ -133,7 +151,7 @@ footer {
             "footer     footer     footer     footer     footer     footer";
     }
 
-    
+
 }
 
 .logo {
@@ -143,9 +161,9 @@ footer {
 
 .btnHead {
     border-radius: 5px;
-    height: 40px;
+    height: 60px;
     background: darkgray;
-    color: rgb(105, 105, 105);
+    color: rgba(105, 105, 105, 0.712);
     box-shadow: 0 0 5px #171616;
 }
 
@@ -156,47 +174,59 @@ footer {
     list-style-type: none;
     display: grid;
     grid-gap: 1px;
-
-    /*    grid-template-rows: repeat(6, 1fr);*/
 }
 
+.btnHead,
 .gridNav input {
     height: 100%;
     width: 100%;
     font-size: 90%;
     font-weight: 700;
-    color: rgb(209,209,217);
+    color: rgb(209, 209, 217);
     text-decoration: none;
-    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, .2);
     padding: .5em 1em;
     outline: none;
     border-radius: 3px;
-    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    background: linear-gradient(rgb(110, 112, 120), rgb(81, 81, 86)) rgb(110, 112, 120);
     box-shadow:
-     0 1px rgba(255,255,255,.2) inset,
-     0 3px 5px rgba(0,1,6,.5),
-     0 0 1px 1px rgba(0,1,6,.2);
+        0 1px rgba(255, 255, 255, .2) inset,
+        0 3px 5px rgba(0, 1, 6, .5),
+        0 0 1px 1px rgba(0, 1, 6, .2);
     transition: .2s ease-in-out;
 }
 
+.btnHead:hover:not(:active) {
+    background: linear-gradient(rgb(126, 126, 134), rgb(70, 71, 76)) rgb(126, 126, 134);
+}
+
 .gridNav input:hover:not(:active) {
-    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+    background: linear-gradient(rgb(126, 126, 134), rgb(70, 71, 76)) rgb(126, 126, 134);
+}
+
+.btnHead:active {
+    top: 1px;
+    background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
+    box-shadow:
+        0 0 1px rgba(0, 0, 0, .5) inset,
+        0 2px 3px rgba(0, 0, 0, .5) inset,
+        0 1px 1px rgba(255, 255, 255, .1);
 }
 
 .gridNav input:active {
     top: 1px;
-    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
     box-shadow:
-     0 0 1px rgba(0,0,0,.5) inset,
-     0 2px 3px rgba(0,0,0,.5) inset,
-     0 1px 1px rgba(255,255,255,.1);
+        0 0 1px rgba(0, 0, 0, .5) inset,
+        0 2px 3px rgba(0, 0, 0, .5) inset,
+        0 1px 1px rgba(255, 255, 255, .1);
 }
 
 .gridbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     height: 100%;
 }
 
@@ -216,6 +246,7 @@ footer {
 }
 
 .tags {
+    margin: 1px;
     text-align: center;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -228,9 +259,9 @@ footer {
 .tags a {
     text-decoration: none;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(238, 234, 234, 0.3);
     margin: 1px;
-    color: rgba(0, 0, 0, 0.31);
+    color: rgb(194, 186, 186);
 }
 
 .contacts>div {
@@ -238,7 +269,7 @@ footer {
 }
 
 .contacts h3 {
-    color: #445161;
+    color: #b8b9bb;
     text-align: center;
     font-size: 2em;
     margin-bottom: 10px;
@@ -295,13 +326,15 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
-    nav{
+
+    nav {
 
         grid-template-rows: 1fr;
-    .gridNav{
-        height: 150px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
+
+        .gridNav {
+            height: 150px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+        }
     }
-}
 }
