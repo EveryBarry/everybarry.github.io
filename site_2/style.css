@@ -37,7 +37,7 @@ header {
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  height: 250px;
+  min-height: 250px;
 }
 
 nav {
@@ -68,6 +68,7 @@ aside {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: aside;
+  padding: 3px;
 }
 
 footer {
@@ -102,18 +103,6 @@ footer {
 
 .contAside {
   grid-area: contAside;
-}
-
-@media (min-width: 1183px) {
-  header {
-    margin-bottom: -15px;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1182px) {
-  header {
-    margin-bottom: -4px;
-  }
 }
 
 @media (max-width: 1024px) {
