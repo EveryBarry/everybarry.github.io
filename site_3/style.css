@@ -71,7 +71,7 @@ body{
 }
 
 .img1 {
-  background-image: url(img/maxresdefault.jpg);
+  background: url(img/maxresdefault.jpg);
 }
 
 .img2 {
