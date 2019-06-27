@@ -1,0 +1,32 @@
+.b-copyrights {
+  min-height: 60px;
+  background-color: #2e2e2e;
+  color: $lightColor;
+  line-height: 60px;
+  padding: 0 15px;
+
+  &_removePadd {
+    margin-left: - 15px;
+    margin-right: -15px;
+  }
+
+  &__left {
+
+    &_decor {
+      font-size: 12px;
+      font-weight: 400;
+      color: #737373;
+      float: left;
+    }
+  }
+
+  &__right {
+
+    &_decor {
+      font-size: 12px;
+      font-weight: 400;
+      color: #737373;
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.b-signInNav {
+    width: 253px;
+    display: flex;
+    justify-content: space-between;
+
+    &_header {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+
+    &__link {
+        font-size: 12px;
+        color: $navColor;
+        transition-duration: 0.5s;
+
+        &:hover {
+            color: $darkenColor;
+        }
+    }
+
+    &__line {
+        position: relative;
+        top: -3px;
+    }
+}

@@ -1,0 +1,22 @@
+.b-header {
+    height: 135px;
+    position: relative;
+}
+
+.b-logos {
+    &_logosHeader {
+        position: absolute;
+        top: 20px;
+        left: 29px;
+    }
+
+    &__mainLogo {
+        font-size: 46px;
+        font-variant: small-caps;
+    }
+
+    &__extraLogo {
+        color: $lightenColor;
+        font-size: 12px;
+    }
+}

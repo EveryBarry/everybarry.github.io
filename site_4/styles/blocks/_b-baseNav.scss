@@ -1,0 +1,71 @@
+.b-baseNav {
+    background: $navColor;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_removePadd {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $lightColor;
+        padding-right: 15px;
+        transition-duration: 0.5s;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 400;
+
+        &:hover {
+            color: $darkenColor;
+            text-decoration: none;
+        }
+    }
+}
+
+//search block
+
+.b-navSearch {
+    height: 30px;
+
+    &__area {
+        border: none;
+        height: inherit;
+        color: $lightenColor;
+        padding: 0 10px;
+        outline: none;
+        transition-duration: 0.5s;
+
+        &:focus {
+            background: lighten($navColor, 50%);
+        }
+
+        &_posLeft {
+            float: left;
+        }
+    }
+
+    &__button {
+        background: $backgroundColor;
+        text-transform: uppercase;
+        color: $navColor;
+        font-size: 12px;
+        border: none;
+        height: inherit;
+        border-left: 1px solid $lightenColor;
+        transition-duration: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            background: $lightenColor;
+            color: $lightColor;
+        }
+
+        &:active {
+            outline: none;
+        }
+    }
+}

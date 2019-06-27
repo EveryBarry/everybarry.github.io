@@ -1,0 +1,45 @@
+.b-projectCards {
+
+    &_btmMrgn {
+        margin-bottom: 50px;
+    }
+}
+
+.b-projectCard {
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+
+        &_mrgn {
+            margin: 20px 0;
+        }
+    }
+
+    &__desc {
+        text-align: justify;
+        color: $lightenColor;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    &__details {
+        text-align: right;
+        display: block;
+        color: $navColor;
+        transition-duration: 0.5s;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+
+        &:hover {
+            color: $darkenColor;
+        }
+    }
+}

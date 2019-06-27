@@ -1,0 +1,73 @@
+.b-socials {
+    width: 251px;
+    height: 49px;
+    background: $navColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    &__header {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    &__icon {
+        list-style-type: none;
+        font-size: 36px;
+        color: $darkenColor;
+        transition-duration: 0.5s;
+        border-radius: 50%;
+
+
+        &_linkedin {
+            width: 32px;
+            height: 32px;
+            background: url(../img/b-socials__icon/icon-linkedin_180.png) no-repeat center;
+            background-color: black;
+        }
+
+        &_twitter {
+            width: 32px;
+            height: 32px;
+            background-color: #1f1f1f;
+            background: url(../img/b-socials__icon/icon-twitter_178.png) no-repeat center;
+            background-color: black;
+        }
+
+        &_pinterest {
+            width: 32px;
+            height: 32px;
+            background-color: #1f1f1f;
+            background: url(../img/b-socials__icon/icon-pinterest_177.png) no-repeat center;
+            background-color: black;
+        }
+
+        &_gplus {
+            width: 32px;
+            height: 32px;
+            background-color: #1f1f1f;
+            background: url(../img/b-socials__icon/icon-google-plus_176.png) no-repeat center;
+            background-color: black;
+        }
+
+        &_rss {
+            width: 32px;
+            height: 32px;
+            background-color: #1f1f1f;
+            background: url(../img/b-socials__icon/icon-rss_175.png) no-repeat center;
+            background-color: black;
+        }
+
+
+        &:hover {
+            background-color: #00acee;
+            cursor: pointer;
+        }
+    }
+}
+
+;

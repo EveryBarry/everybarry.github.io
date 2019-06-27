@@ -1,0 +1,37 @@
+@import "vars";
+@import "blocks/header";
+@import "blocks/b-socials";
+@import "blocks/b-signInNav";
+@import "blocks/b-baseNav";
+@import "blocks/b-slider";
+@import "blocks/b-navCard";
+@import "blocks/b-fullSeparator";
+@import "blocks/b-projectCard";
+@import "blocks/b-footer";
+@import "blocks/b-copyrights";
+
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: $baseFont;
+    color: $darkenColor;
+    background: $frameColor;
+}
+
+.headerLine {
+    height: 5px;
+    background: $navColor;
+    margin: 0 -15px;
+}
+
+.container {
+    background: $backgroundColor;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 961px;
+}
