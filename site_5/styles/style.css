@@ -1,0 +1,50 @@
+.b-mainBackground {
+  height: 4272px;
+  background-size: cover;
+}
+
+.b-mainBackground_dark {
+  background: url(../img/mainBackground/mainBackground_dark.webp);
+}
+
+.b-mainBackground_painter {
+  background: url(../../img/mainBackground/mainBackground_painter.webp);
+}
+
+.b-navBrand {
+  font-size: 2em;
+}
+
+.b-mainNav_decor {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.b-mainNav:hover {
+  color: aliceblue;
+  border-bottom: 2px;
+}
+
+.b-services_decor {
+  margin: 15px 0;
+}
+
+.b-service {
+  margin: 15px 0;
+}
+
+.b-service_card {
+  background: rgba(255, 255, 255, 0.212);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+b-cardService_style {
+  width: 15rem;
+  background-color: transparent;
+}
+
+.container {
+  width: 1280px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+.b-mainBackground {
+    height: 4272px;
+    background-size: cover;
+    // filter: blur(8px);
+
+    &_dark {
+        background: $mainBackground;  
+    }
+//alternative backGround
+    &_painter {
+        background: url(../../img/mainBackground/mainBackground_painter.webp);
+    }
+}
