@@ -44,6 +44,11 @@ b-cardService_style {
   background-color: transparent;
 }
 
+.b-bigServices {
+  height: 200px;
+  background-color: #fff;
+}
+
 .container {
   width: 1280px;
 }
